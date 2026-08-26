@@ -1,0 +1,89 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+provider: Octagos Health
+providerId: octagos-health
+generated: '2026-08-26'
+method: searched
+source: https://www.octagos.com/pricing
+created: '2026-08-26'
+modified: '2026-08-26'
+description: >-
+  Octagos publishes a named tier structure but NO prices. Every tier and every billing
+  model routes to a "Get Started" / "Book a Demo" sales conversation — there is no
+  self-serve signup, no published rate card, no per-patient or per-transmission figure,
+  and no CPT-code-derived fee schedule. The tiers below are recorded verbatim from the
+  pricing page; the absence of a number is the finding, not an omission on our part.
+tags:
+- Healthcare
+- Cardiac Monitoring
+- Remote Patient Monitoring
+- Clinical Services
+plan_count: 4
+currency: USD
+billing_note: >-
+  Pricing is quote-only. Procurement is also available through the Microsoft Azure
+  Marketplace listing (azuremarketplace.microsoft.com/en-us/marketplace/apps/octagoshealthinc1738102119486.octagos-offer-01,
+  HTTP 200), and Octagos states Azure MACC spend can be applied — but no price is
+  published there either.
+plans:
+- id: pro
+  name: Pro
+  type: quote
+  price: null
+  period: null
+  description: Software-only platform.
+  includes:
+  - Atlas AI Precision triage
+  - Automated alerts
+  - EHR integration
+  - Data migration
+  - Onboarding
+  - Customer success
+  excludes:
+  - Clinical Services
+  - Patient Engagement Services
+- id: premium
+  name: Premium
+  type: quote
+  price: null
+  period: null
+  description: Platform plus full-time services.
+  includes:
+  - Everything in Pro
+  - Clinical Services (full-time)
+  - Patient Engagement Services (full-time)
+- id: flex
+  name: Flex
+  type: quote
+  price: null
+  period: null
+  description: Platform plus on-demand services.
+  includes:
+  - Everything in Pro
+  - On-Demand Clinical Services
+  - On-Demand Patient Engagement
+- id: custom
+  name: Custom
+  type: quote
+  price: null
+  period: null
+  description: >-
+    Fully tailored clinical and patient services built to an individual practice's
+    specification.
+billing_models:
+- id: billable-transmissions
+  name: Billable Transmissions Plan
+  type: usage-based
+  price: null
+  description: Cost adjusts to the volume of monthly billable transmissions.
+- id: fixed-monthly
+  name: Fixed-Monthly Plan
+  type: subscription
+  price: null
+  period: month
+  description: Consistent, predictable monthly cost.
+- id: custom-billing
+  name: Custom Plan
+  type: custom
+  price: null
+  description: Billing tailored to clinic workflow and patient volume.

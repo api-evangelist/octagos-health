@@ -1,0 +1,169 @@
+# Octagos Health
+
+  > AI-powered cardiac remote monitoring platform for cardiology practices and health systems. Octagos combines vendor-neutral device support, the Atlas AI engine for alert triage, EHR integrations (Epic, Oracle
+   Health, athenahealth), clinical services, and patient-facing apps to reduce alert fatigue and accelerate cardiac monitoring workflows.
+
+  Octagos serves cardiology practices, electrophysiology labs, and large health systems including AdventHealth, HCA Healthcare, University of Pennsylvania, INTEGRIS Health, Ochsner Health, UTMB Health, and many
+  others. The platform supports all major cardiac device vendors (Medtronic, Boston Scientific, Abbott/St. Jude, Biotronik) and all session types: in-clinic device checks, remote transmissions, heart failure
+  reports, loop recorder data, and CardioMEMS hemodynamic monitoring.
+
+  ## Core
+
+  - [Octagos Homepage](https://www.octagos.com/): Reduce alert fatigue and manual review with AI-powered cardiac monitoring, clinical services, and EHR integrations built for cardiology teams.
+
+  ## Products and Devices
+
+  Hardware, devices, and core monitoring capabilities supported by the Octagos platform.
+
+  - [Cardiac Device Remote Monitoring Solutions | Octagos](https://www.octagos.com/products/cardiac-devices): Explore Octagos-supported cardiac devices designed for accurate data capture, seamless integration,
+  and efficient remote monitoring workflows.
+  - [Ambulatory & Wearable Cardiac Monitoring | Octagos](https://www.octagos.com/products/ambulatory-monitors): Wearable and ambulatory cardiac monitoring solutions from Octagos with seamless integration,
+  efficient review, and optimized billing workflows.
+  - [Heart Failure Monitoring Made for Cardiology Teams | Octagos](https://www.octagos.com/products/heart-failure): Streamline heart failure monitoring with AI-supported workflows that improve care coordination,
+   reduce manual review, and support clinical teams.
+  - [Data and Analytics for Cardiac Monitoring | Octagos](https://www.octagos.com/products/data-analytics): Octagos' analytics tools surface actionable insights, automate procedure identification, and help
+  clinics optimize workflows and patient care.
+  - [Patient Engagement Tools for Cardiac Monitoring | Octagos](https://www.octagos.com/products/patient-engagement): Octagos' patient engagement tools reduce connectivity issues, improve compliance, and help
+  clinics spend less time troubleshooting devices.
+  - [Clinical Services for Cardiac Monitoring | Octagos](https://www.octagos.com/products/clinical-service): Octagos' clinical services support cardiology practices with accurate reporting, reduced manual
+  workload, and scalable cardiac remote monitoring support.
+  - [S-Patch EXL by Octagos | Ambulatory ECG Monitoring](https://www.octagos.com/products/ambulatory-s-patch-exl): FDA-cleared, lightweight ambulatory ECG device that integrates with our AI platform to deliver
+  accurate insights, automated reporting, and efficient workflows.
+
+  ## Solutions by Role
+
+  Role-based solution overviews for physicians, nurses, IT teams, and administrators.
+
+  - [Cardiac Monitoring Solutions for Physicians | Octagos](https://www.octagos.com/solutions/physicians): Octagos helps physicians reduce manual review, access clearer insights, and manage cardiac remote
+  monitoring more efficiently across workflows.
+  - [Cardiac Remote Monitoring Tools for Nurses | Octagos](https://www.octagos.com/solutions/nurses): Octagos supports nurses with cardiac remote monitoring tools that reduce manual tasks, simplify workflows,
+  and help teams focus on patient care.
+  - [Cardiac Monitoring Integration for IT Teams | Octagos](https://www.octagos.com/solutions/it): Octagos helps IT teams integrate cardiac monitoring software with secure data migration, EHR connectivity, and
+  interoperable workflows.
+  - [Cardiac Monitoring Solutions for Administrators | Octagos](https://www.octagos.com/solutions/administration): Octagos helps administrators optimize remote monitoring revenue, improve operational visibility,
+   and manage cardiac programs at scale.
+  - [Epic EHR Integration for Cardiac Device Clinics | Octagos](https://www.octagos.com/solutions/ehr/epic): Integrate Epic with Octagos to reduce manual workflows, improve data accuracy, and scale AI-supported
+  cardiac device and CIED monitoring.
+  - [Oracle Health EHR Integration | Octagos](https://www.octagos.com/solutions/ehr/oracle-health): Octagos integrates with Oracle Health using FHIR API, supporting bidirectional data exchange, e-signed reports,
+   and billing claims. Get up and running in as little as 6 weeks.
+  - [athenahealth EHR Integration | Octagos](https://www.octagos.com/solutions/ehr/athenahealth): Connect athenahealth with Octagos for seamless cardiac remote monitoring, faster workflows, and accurate
+  reporting.
+
+  ## Company
+
+  Information about Octagos Health, the team, and how to get in touch.
+
+  - [Contact Octagos | Cardiac Remote Monitoring Solutions](https://www.octagos.com/company/contact): Contact Octagos to learn how our AI-powered cardiac monitoring software and clinical services can support
+  your clinic or health system.
+  - [About Octagos | Leaders in Cardiac Remote Monitoring](https://www.octagos.com/company/about-us): Learn about Octagos' mission to transform cardiac care by combining AI, clinical services, and deep
+  integration to support modern cardiology teams.
+  - [Meet the Octagos Team | Leaders in Cardiac Remote Monitoring](https://www.octagos.com/company/team): Learn about the dedicated team behind Octagos, committed to revolutionizing cardiac remote monitoring
+  with innovative solutions and unparalleled support.
+  - [See Octagos in Action: Book Your Demo Today](https://www.octagos.com/company/book-a-demo): Schedule a demo to see how Octagos uses AI to reduce alert fatigue, simplify cardiac monitoring workflows, and
+  integrate with your EHR in weeks.
+  - [Contact Octagos | Smarter Cardiac Monitoring Solutions](https://www.octagos.com/company/contact-us): Contact Octagos to learn how our vendor-neutral cardiac monitoring software and clinical services can
+  support your clinic or health system.
+
+  ## Resources and Learning Center
+
+  Educational content, publications, webinars, and clinical guidance.
+
+  - [Cardiac Remote Monitoring On-Demand Webinars | Octagos](https://www.octagos.com/resources/webinars): Watch live or on-demand webinars covering cardiac remote monitoring, AI innovation, billing strategies,
+  and real-world clinic workflows.
+  - [Compare Cardiac Remote Monitoring Solutions | Octagos](https://www.octagos.com/resources/compare): Compare Octagos to other cardiac monitoring solutions and see how our AI platform improves accuracy,
+  efficiency, and clinic workflows.
+  - [Cardiac Monitoring Research and Publications | Octagos](https://www.octagos.com/resources/publications): Explore Octagos research, case studies, and publications highlighting advancements in AI-driven
+  cardiac remote monitoring and patient care.
+
+  ## Events
+
+  Upcoming and recent events, including HRS 2026 and the Octagos Digital Health Symposium.
+
+  - [boston-af](https://www.octagos.com/events/boston-af)
+  - [dc-symposium](https://www.octagos.com/events/dc-symposium)
+  - [hrs](https://www.octagos.com/events/hrs)
+  - [hrx-2](https://www.octagos.com/events/hrx-2)
+  - [innovation-insights-city-lights](https://www.octagos.com/events/innovation-insights-city-lights)
+  - [medaxiom-cv-transforum-fall](https://www.octagos.com/events/medaxiom-cv-transforum-fall)
+  - [medaxiom-cv-transforum-spring-2026](https://www.octagos.com/events/medaxiom-cv-transforum-spring-2026)
+  - [validating-a-scalable-heart-failure-monitoring-model](https://www.octagos.com/events/validating-a-scalable-heart-failure-monitoring-model)
+  - [windy-city-visions](https://www.octagos.com/events/windy-city-visions)
+
+  ## Other Pages
+
+  - [Terms of Use | Octagos Cardiac Remote Monitoring](https://www.octagos.com/terms): Explore the Terms of Use for Octagos, outlining user rights, responsibilities, and legal guidelines for accessing our
+  healthcare technology platform.
+  - [Privacy Policy | Octagos Cardiac Remote Monitoring](https://www.octagos.com/privacy): Review the Octagos Privacy Policy to learn how we collect, use, and protect your personal data while using our
+  healthcare technology services.
+  - [Cardiac Remote Monitoring Events and Conferences | Octagos](https://www.octagos.com/events): Stay updated on Octagos' upcoming events, conferences, and trade shows focused on cardiac remote monitoring and
+  healthcare innovation.
+  - [Cardiac Remote Monitoring Learning Center | Octagos](https://www.octagos.com/learning-center): Explore articles, case studies, and insights on cardiac remote monitoring, AI innovation, and clinical
+  workflows designed for cardiac care teams.
+  - [Patient Resources for Cardiac Remote Monitoring | Octagos](https://www.octagos.com/patients): Explore tools and resources that help patients stay connected, understand their cardiac monitoring, and feel
+  supported throughout their care.
+  - [Cardiac Remote Monitoring Pricing & Services | Octagos](https://www.octagos.com/pricing): View Octagos pricing plans for cardiac monitoring software and clinical services, built to scale with your clinic's
+  needs and workflows.
+  - [Octagos HRS 2026](https://www.octagos.com/HRS-2026): The future of digital health is about to take center stage. This summer, Octagos is gathering leaders, innovators, and disruptors for a high impact,
+  can't miss experience. The city? Still a secret. The momentum? Already building.
+  - [Octagos | AI Cardiac Monitoring That Reduces Alert Fatigue](https://www.octagos.com/home-copy): Reduce alert fatigue and manual review with AI-powered cardiac monitoring, clinical services, and EHR
+  integrations built for cardiology teams.
+  - [Octagos Digital Health Symposium](https://www.octagos.com/octagos-digital-health-dc-symposium)
+  - [Octagos | AI Cardiac Monitoring That Reduces Alert Fatigue](https://www.octagos.com/home-copy-2): Reduce alert fatigue and manual review with AI-powered cardiac monitoring, clinical services, and EHR
+  integrations built for cardiology teams.
+  - [OctaCare Patient App | Connect Your Device, Stay on Track](https://www.octagos.com/download/octacare-patient-heart-app): Transmit cardiac data from home and stay connected to your care team with the
+  OctaCare Patient App, designed for simple, secure heart monitoring.
+  - [OctaLink Clinic App | Mobile Cardiac Monitoring Access](https://www.octagos.com/download/octalink-clinic-app): Manage cardiac device transmissions on the go with the OctaLink Clinic App, giving clinics
+  real-time access, AI-powered insights, and EHR connectivity.
+  - [2025-year-in-review](https://www.octagos.com/learning-center/2025-year-in-review)
+  - [2026-cms](https://www.octagos.com/learning-center/2026-cms)
+  - [ai-redefining-healthcare-efficiency](https://www.octagos.com/learning-center/ai-redefining-healthcare-efficiency)
+  - [ai-triage](https://www.octagos.com/learning-center/ai-triage)
+  - [cardiac-remote-monitoring-aurora-denver-octagos](https://www.octagos.com/learning-center/cardiac-remote-monitoring-aurora-denver-octagos)
+  - [catalyst-report-2026](https://www.octagos.com/learning-center/catalyst-report-2026)
+  - [clinical-safety](https://www.octagos.com/learning-center/clinical-safety)
+  - [data-deluge-cardiac-remote-monitoring](https://www.octagos.com/learning-center/data-deluge-cardiac-remote-monitoring)
+  - [financial-impact-remote-monitoring](https://www.octagos.com/learning-center/financial-impact-remote-monitoring)
+  - [future-of-cardiac-device-remote-monitoring](https://www.octagos.com/learning-center/future-of-cardiac-device-remote-monitoring)
+  - [jacc-study-human-in-the-loop](https://www.octagos.com/learning-center/jacc-study-human-in-the-loop)
+  - [lehigh-valley-case-study-blog](https://www.octagos.com/learning-center/lehigh-valley-case-study-blog)
+  - [microsoft-for-startups](https://www.octagos.com/learning-center/microsoft-for-startups)
+  - [microsoft-marketplace](https://www.octagos.com/learning-center/microsoft-marketplace)
+  - [octalink-has-arrived-ai-powered-cardiac-monitoring-wherever-you-are](https://www.octagos.com/learning-center/octalink-has-arrived-ai-powered-cardiac-monitoring-wherever-you-are)
+  - [protecting-care-teams-from-burnout](https://www.octagos.com/learning-center/protecting-care-teams-from-burnout)
+  - [reduce-data-burden](https://www.octagos.com/learning-center/reduce-data-burden)
+  - [remote-cardiac-monitoring-benefits-use-costs](https://www.octagos.com/learning-center/remote-cardiac-monitoring-benefits-use-costs)
+  - [scaling-clinics-without-adding-staff](https://www.octagos.com/learning-center/scaling-clinics-without-adding-staff)
+  - [scaling-device-clinics](https://www.octagos.com/learning-center/scaling-device-clinics)
+  - [the-biggest-takeaway-from-healthimpact-live-ai-is-transforming-healthcare-systems](https://www.octagos.com/learning-center/the-biggest-takeaway-from-healthimpact-live-ai-is-transforming-healthcare-systems)
+  - [time-recognizes-octagos-among-the-worlds-top-healthtech-companies](https://www.octagos.com/learning-center/time-recognizes-octagos-among-the-worlds-top-healthtech-companies)
+  - [what-are-cardiac-monitoring-services-a-clinical-overview](https://www.octagos.com/learning-center/what-are-cardiac-monitoring-services-a-clinical-overview)
+  - [what-guidelines-require-from-clinics](https://www.octagos.com/learning-center/what-guidelines-require-from-clinics)
+  - [when-alerts-become-a-clinical-risk](https://www.octagos.com/learning-center/when-alerts-become-a-clinical-risk)
+
+  ## Legal
+
+  - [Privacy Policy](https://www.octagos.com/privacy)
+  - [Terms of Use](https://www.octagos.com/terms)
+
+  ## Optional
+
+  ### About the Atlas AI Engine
+
+  Atlas AI is Octagos' proprietary triage engine that automatically classifies cardiac transmissions, suppresses false-positive alerts, and routes clinically meaningful events to the appropriate reviewer. It
+  supports all major device manufacturers and is designed to reduce manual review burden on cardiology teams while improving response times to true clinical events.
+
+  ### Supported Device Vendors
+
+  - Medtronic (MDT)
+  - Boston Scientific (BSX)
+  - Abbott / St. Jude Medical (STJ)
+  - Biotronik (BIO)
+  - ARCS
+
+  ### Supported Session and Device Types
+
+  - In-clinic device interrogations and pacemaker checks
+  - Remote transmissions from implantable cardiac devices (ICD, CRT, pacemakers, loop recorders)
+  - Heart failure reports including CardioMEMS hemodynamic monitoring
+  - Ambulatory ECG monitoring via the S-Patch EXL wearable patch
+  - Loop recorder data

@@ -1,0 +1,30 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+provider: Octagos Health
+providerId: octagos-health
+generated: '2026-08-26'
+method: searched
+source: >-
+  Search of www.octagos.com (site, sitemap, llms.txt, pricing, IT and EHR-integration
+  pages) for any published quota, throttle, burst or rate-limit response header —
+  2026-08-26.
+created: '2026-08-26'
+modified: '2026-08-26'
+description: >-
+  Octagos Health documents no rate limits. There is no developer portal or API reference
+  in which limits could be published, and the pricing page expresses volume in clinical
+  units (billable transmissions per month) rather than as an API quota. An honest zero.
+tags:
+- Healthcare
+- Cardiac Monitoring
+limit_count: 0
+limits: []
+headers: {}
+responseCodes: {}
+note: >-
+  No X-RateLimit-*, RateLimit-* or Retry-After header could be observed either: the only
+  unauthenticated endpoint reachable on the application host is
+  https://app.octagos.com/api/health, which returns HTTP 503 "Unhealthy" with no
+  rate-limit headers. Volume is instead negotiated commercially — the "Billable
+  Transmissions Plan" scales cost with monthly transmission count — but that is a billing
+  meter, not a runtime throttle, and Octagos publishes no figure for it.

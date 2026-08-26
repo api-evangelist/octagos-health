@@ -1,0 +1,55 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Registry sweep of npm, PyPI, RubyGems, NuGet and GitHub, plus a read of the
+  octagos.com site (footer, IT-solutions and EHR-integration pages), 2026-08-26.
+package_count: 0
+packages: []
+note: >-
+  Octagos Health publishes no first-party client libraries. Every registry queried
+  returned zero first-party results and the company has no GitHub organization, so
+  there is nothing to record a version or release date for. No `SDKs` pointer is
+  emitted. The two artifacts Octagos does distribute — the OctaCare patient app and
+  the OctaLink clinic app — are end-user mobile applications delivered through the
+  Apple App Store and Google Play, not developer packages, and are deliberately not
+  listed here.
+registries_searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=octagos
+  result_count: 0
+  version: null
+- registry: pypi
+  query: https://pypi.org/pypi/octagos/json
+  status: 404
+  result_count: 0
+  version: null
+- registry: rubygems
+  query: https://rubygems.org/api/v1/search.json?query=octagos
+  result_count: 0
+  version: null
+- registry: nuget
+  query: https://azuresearch-usnc.nuget.org/query?q=octagos
+  result_count: 0
+  version: null
+- registry: github
+  query: https://api.github.com/orgs/octagos
+  status: 404
+  result_count: 0
+  version: null
+  note: >-
+    No GitHub organization exists under octagos, octagoshealth or octagos-health
+    (all three return 404). Repositories matching the name in a code search belong to
+    individual accounts, not to the company, and are not treated as first-party.
+distribution_channels:
+- name: OctaCare patient app
+  kind: mobile-application
+  url: https://www.octagos.com/download/octacare-patient-heart-app
+  status: 200
+  official: true
+  note: End-user mobile app, not a developer package. No registry metadata exists.
+- name: OctaLink clinic app
+  kind: mobile-application
+  url: https://www.octagos.com/download/octalink-clinic-app
+  status: 200
+  official: true
+  note: End-user mobile app, not a developer package. No registry metadata exists.

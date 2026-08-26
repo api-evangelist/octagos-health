@@ -1,0 +1,51 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Probes of octagos.com and app.octagos.com plus a read of the full sitemap (90 URLs),
+  2026-08-26.
+description: >-
+  Octagos Health publishes no API lifecycle surface. There is no versioning policy, no
+  deprecation or sunset policy, no public status page, no SLA document and no changelog —
+  which follows from there being no public API to version. Product news is published as
+  Learning Center articles, but those are dated marketing posts, not a release log.
+versioning:
+  scheme: null
+  current_version: null
+  policy_url: null
+  evidence: No public API and no version documentation anywhere on the site.
+deprecation:
+  policy: false
+  policy_url: null
+  sunset_header: false
+  deprecation_header: false
+  evidence: >-
+    No deprecation or sunset policy published; RFC 8594 headers cannot be observed
+    because there is no documented endpoint to call.
+status_page:
+  present: false
+  url: null
+  probes:
+  - url: https://status.octagos.com/
+    status: 0
+    finding: DNS does not resolve (NXDOMAIN).
+  - url: https://www.octagos.com/status
+    status: 404
+  - url: https://app.octagos.com/api/health
+    status: 503
+    finding: >-
+      A live health endpoint exists on the tenant application host and answered 503
+      "Unhealthy" when probed. This is an internal readiness probe, not a published
+      status page, and is recorded as evidence that a backend API exists rather than as
+      a status surface.
+sla:
+  published: false
+  evidence: >-
+    No SLA document. The site publishes operational commitments as onboarding speed
+    ("Average Onboarding < 20 business days" for Epic, "< 60 business days" for Oracle
+    Health) and clinical accuracy claims, not as availability targets.
+changelog:
+  present: false
+  evidence: >-
+    No dated changelog or release-notes page in the sitemap. The Learning Center
+    (https://www.octagos.com/learning-center, HTTP 200) carries product announcements
+    such as the OctaLink launch, but it is a blog, not a change log.

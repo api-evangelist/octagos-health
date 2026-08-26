@@ -1,0 +1,65 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://www.octagos.com/solutions/it, https://www.octagos.com/solutions/ehr/epic,
+  https://www.octagos.com/solutions/ehr/oracle-health, plus direct probes of
+  app.octagos.com — 2026-08-26.
+note: >-
+  DERIVED FROM DOCS ONLY. Octagos publishes no OpenAPI, so there are no securitySchemes
+  to read. Everything below describes how humans and EHR systems authenticate INTO the
+  Octagos application, not how a developer would authenticate against a public API —
+  because no public API is offered. There is no published API-key issuance flow, no
+  token endpoint, and no developer credential of any kind.
+public_api_authentication:
+  available: false
+  evidence: >-
+    No developer portal, no API reference, no signup that yields a credential. The only
+    credentialed surface reachable from the public internet is the tenant application at
+    https://app.octagos.com (HTTP 200, Angular SPA login), whose backend answers
+    /api/health with HTTP 503 "Unhealthy" — proving a real API router exists behind the
+    login, but nothing about it is documented.
+schemes:
+- id: saml2-sso
+  type: saml2
+  audience: clinic and health-system staff
+  evidence: '"Multi-factor authentication and SAML 2.0 single sign-on" (octagos.com/solutions/it).'
+- id: epic-sso
+  type: sso
+  audience: Epic end users
+  evidence: >-
+    "Direct deployment of Octagos from Epic with SSO + MFA" (octagos.com/solutions/it);
+    "Epic single sign-on (SSO) and multi-factor authentication (MFA)"
+    (octagos.com/solutions/ehr/epic).
+- id: oracle-health-sso
+  type: sso
+  audience: Oracle Health end users
+  evidence: >-
+    "single sign-on (SSO) and multi-factor authentication (MFA) streamline access while
+    reducing risk" (octagos.com/solutions/ehr/oracle-health).
+- id: smart-on-fhir-oauth2
+  type: oauth2
+  flow: authorization_code
+  direction: outbound
+  audience: the EHR's FHIR authorization server, not Octagos
+  evidence: >-
+    "Epic Showroom-listed for SMART on FHIR" (octagos.com/solutions/ehr/epic). The
+    SMART App Launch framework requires an OAuth 2.0 authorization-code exchange, but the
+    authorization server belongs to the customer's EHR. Octagos publishes no scope list,
+    no launch context documentation and no redirect-URI registration guidance, so this
+    cannot be exercised from the public surface.
+mfa:
+  required: true
+  evidence: MFA is stated alongside SSO on the IT, Epic and Oracle Health pages.
+discovery_probes:
+- url: https://app.octagos.com/.well-known/openid-configuration
+  status: 404
+- url: https://app.octagos.com/.well-known/oauth-authorization-server
+  status: 404
+- url: https://app.octagos.com/.well-known/oauth-protected-resource
+  status: 404
+- url: https://www.octagos.com/.well-known/openid-configuration
+  status: 404
+scopes_artifact: >-
+  Not written. scopes/ is OAuth-only and requires a scope reference to derive from;
+  Octagos documents no scopes of its own (the SMART on FHIR scopes in play belong to the
+  customer's EHR). Forcing an empty scopes artifact would misrepresent the surface.

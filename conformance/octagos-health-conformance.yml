@@ -1,0 +1,103 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://www.octagos.com/solutions/it, https://www.octagos.com/solutions/ehr/epic,
+  https://www.octagos.com/solutions/ehr/oracle-health,
+  https://www.octagos.com/solutions/ehr/athenahealth — read 2026-08-26.
+important: >-
+  EVERY entry below is evidenced from Octagos' own marketing and solution pages, NOT from
+  a machine-readable contract. Octagos publishes no OpenAPI, AsyncAPI, GraphQL SDL, WSDL
+  or .proto (see x-coverage in apis.yml), so none of these conformance claims could be
+  verified against a spec. They are recorded as provider assertions with the page that
+  asserts them. In particular, `domain_standard_conformance` in the Kin Score reads the
+  CONTRACT, and there is no contract here to read — this file must not be treated as
+  satisfying it.
+posture: >-
+  Octagos is a CONSUMER of healthcare interoperability standards, not a publisher of
+  them. It integrates into customer-owned EHRs (Epic, Oracle Health, athenahealth,
+  NextGen, MEDENT) as a SMART on FHIR application and via HL7 v2 messaging. The FHIR
+  server in every one of those integrations belongs to the EHR vendor or the health
+  system, not to Octagos.
+standards:
+- id: fhir
+  conforms: true
+  role: consumer
+  evidence: >-
+    "Octagos integrates with Oracle Health using FHIR API, supporting bidirectional data
+    exchange" (octagos.com/solutions/ehr/oracle-health) and "Octagos merges the precision
+    of FHIR APIs with the reliability of HL7 v2" (octagos.com/solutions/ehr/epic). No FHIR
+    version (R4/R4B/R5) is stated anywhere on the site, and no CapabilityStatement or
+    /metadata endpoint is published by Octagos.
+- id: smart-on-fhir
+  conforms: true
+  role: consumer
+  evidence: >-
+    "Epic Showroom-listed for SMART on FHIR and Cardiac Monitoring Integration"
+    (octagos.com/solutions/ehr/epic); "Secure interoperability via SMART on FHIR® and
+    HL7® FHIR®" (octagos.com/solutions/it). SMART on FHIR implies an OAuth 2.0
+    authorization-code launch against the EHR's authorization server, but Octagos
+    publishes no scope list or launch documentation of its own.
+- id: hl7v2
+  conforms: true
+  role: consumer
+  evidence: >-
+    "Deep, bi-directional HL7 and FHIR API connectivity" (octagos.com/solutions/it). The
+    Epic page's integration diagram names "ORU result PDFs" and "unsolicited orders",
+    indicating ORU and order message support. No message-type conformance profile,
+    segment specification or interface guide is published.
+- id: oauth2
+  conforms: true
+  role: consumer
+  evidence: >-
+    Implied by the SMART on FHIR launch pattern and by Epic/Oracle SSO. Not independently
+    verifiable — no OAuth authorization-server or protected-resource metadata is served
+    on any Octagos host (both /.well-known/oauth-authorization-server and
+    /.well-known/oauth-protected-resource return 404).
+- id: saml2
+  conforms: true
+  role: consumer
+  evidence: >-
+    "Multi-factor authentication and SAML 2.0 single sign-on" (octagos.com/solutions/it).
+- id: oidc
+  conforms: false
+  evidence: >-
+    No /.well-known/openid-configuration on www.octagos.com or app.octagos.com (both 404).
+- id: hipaa
+  conforms: true
+  evidence: '"HIPAA-compliant infrastructure" (octagos.com/solutions/it).'
+- id: soc2-type-ii
+  conforms: true
+  evidence: >-
+    "Independently audited to SOC 2 Type II, with a public SOC 3 summary"
+    (octagos.com/solutions/it); "SOC 2 Type 2 and SOC 3 certification and HIPAA
+    compliance" (octagos.com/solutions/ehr/oracle-health). NOTE: the SOC 3 summary is
+    described as public but no URL for it is published anywhere on the site, and no
+    trust-center host exists (trust.octagos.com and security.octagos.com do not resolve).
+- id: iso-27001
+  conforms: true
+  evidence: '"ISO 27001 certified" (octagos.com/solutions/it).'
+- id: nist-csf
+  conforms: true
+  evidence: '"NIST-aligned security framework" (octagos.com/solutions/it).'
+- id: rfc9457
+  conforms: false
+  evidence: No public contract or error reference exists to assess a problem-details envelope.
+- id: rfc8594
+  conforms: false
+  evidence: No deprecation or sunset policy is published.
+- id: rfc9116
+  conforms: false
+  evidence: No /.well-known/security.txt on any host (404).
+domain_standard:
+  market: healthcare / cardiac remote monitoring
+  candidate_standards:
+  - fhir
+  - smart-on-fhir
+  - hl7v2
+  contract_declares: false
+  note: >-
+    Reward-only check. Octagos names FHIR, SMART on FHIR and HL7 v2 in prose, and is
+    listed in Epic Showroom as a SMART on FHIR app, but declares none of them in a
+    machine-readable contract because it publishes none. Recorded as not-evidenced
+    rather than absent — the standard is clearly spoken here, just not in a form a
+    machine can read.

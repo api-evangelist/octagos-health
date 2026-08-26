@@ -1,0 +1,71 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Live GET probes of the /.well-known/ discovery surface on every host in apis.yml
+  (www.octagos.com marketing site, app.octagos.com tenant application host), 2026-08-26.
+note: >-
+  No /.well-known/ document is served on either host. www.octagos.com is a Webflow site
+  that answers every /.well-known/* path with an 88-byte HTML body reading
+  "Invalid .well-known request" under an HTTP 404. app.octagos.com is an Angular
+  single-page application whose backend returns a bare HTTP 404 (0 bytes) for every
+  /.well-known/* path while answering 200 with the 1,297-byte SPA shell for ordinary
+  routes — so the 404s here are genuine negatives, not a catch-all masking a document.
+  Nothing was saved and NO WellKnown or SecurityTxt pointer is emitted: this file
+  records a measured absence.
+hit_count: 0
+hosts:
+- host: https://www.octagos.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://app.octagos.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_404_control:
+  www.octagos.com:
+    path: /ThisPathDoesNotExist12345
+    status: 404
+    bytes: 68800
+  app.octagos.com:
+    path: /ZZnotfound123
+    status: 200
+    bytes: 1297
+    note: >-
+      SPA shell served for unknown ordinary routes, but /.well-known/* returns a bare
+      0-byte 404 — the well-known negatives are therefore trustworthy.

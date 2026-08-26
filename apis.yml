@@ -1,17 +1,34 @@
 aid: octagos-health
 name: Octagos Health
-description: 'Octagos Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: Octagos Health is a Houston, Texas based digital health company providing an AI-assisted
+  cardiac remote monitoring platform for cardiology practices, electrophysiology labs and health systems.
+  Its Atlas AI engine triages implantable cardiac device transmissions to suppress non-actionable alerts,
+  paired with IBHRE-certified human device-specialist review (the "Two-Brain Approach"). The platform
+  is vendor-neutral across Medtronic, Boston Scientific, Abbott/St. Jude, Biotronik and ARCS devices,
+  covers in-clinic interrogations, remote transmissions, loop recorders, CardioMEMS heart-failure hemodynamics
+  and the S-Patch EXL ambulatory ECG patch, and adds patient engagement, billing/revenue analytics and
+  bi-directional EHR integration. Integration with Epic, Oracle Health, athenahealth, NextGen and MEDENT
+  is delivered through HL7 v2 messaging, SMART on FHIR and FHIR APIs as an implementation service; Octagos
+  publishes no public developer portal, API reference or machine-readable API contract of its own.
+image: https://cdn.prod.website-files.com/6724edce1aa90d0626ed13ed/67376967ef829ebd83e4250f_logomark.png
 url: https://raw.githubusercontent.com/api-evangelist/octagos-health/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Healthcare
+- Cardiology
+- Remote Patient Monitoring
+- Medical Devices
+- Artificial Intelligence
+- Health IT
+- Interoperability
+- FHIR
+- EHR Integration
+- Clinical Workflow
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,56 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/octagos-health-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/octagos-health_stock/
+  url: https://www.octagos.com/
+- type: Pricing
+  url: https://www.octagos.com/pricing
+- type: TermsOfService
+  url: https://www.octagos.com/terms
+- type: PrivacyPolicy
+  url: https://www.octagos.com/privacy
+- type: Support
+  url: https://www.octagos.com/company/contact
+- type: Blog
+  url: https://www.octagos.com/learning-center
+- type: Login
+  url: https://app.octagos.com/
+- type: LLMsTxt
+  url: llms/octagos-health-llms.txt
+- type: Conformance
+  url: conformance/octagos-health-conformance.yml
+- type: Compliance
+  url: conformance/octagos-health-conformance.yml
+- type: Plans
+  url: plans/octagos-health-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/octagos-health-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/octagos-health-lifecycle.yml
+x-harvest-url: https://forgeglobal.com/octagos-health_stock/
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 10
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: Octagos markets bi-directional HL7 v2 and SMART on FHIR EHR integration and runs a live API
+    behind its tenant app at app.octagos.com — /api/health answered HTTP 503 while every /.well-known/*
+    path returned a bare 404 — but it publishes no developer portal, API reference or machine-readable
+    contract, and every integration and pricing path on the site terminates in a Book a Demo sales form.
+  evidence:
+  - url: https://www.octagos.com/openapi.json
+    status: 404
+  - url: https://app.octagos.com/api/health
+    status: 503
+  - url: https://www.octagos.com/pricing
+    status: 200
+  - url: https://www.octagos.com/company/book-a-demo
+    status: 200
+  - url: https://api.github.com/orgs/octagos
+    status: 404
+  checked: '2026-08-26'

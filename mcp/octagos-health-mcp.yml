@@ -1,0 +1,32 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Search of octagos.com (site, llms.txt, sitemap), the Azure Marketplace listing, npm,
+  PyPI and GitHub for a hosted or stdio MCP server, plus direct probes of
+  app.octagos.com, 2026-08-26.
+status: none
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+note: >-
+  Octagos Health ships no MCP server — neither a remote endpoint nor a locally
+  installable stdio package. No @octagos scope exists on npm, no PyPI distribution,
+  no GitHub organization, and neither the site nor the provider-published llms.txt
+  mentions MCP, tools or agent integration. No candidate tool list could be derived
+  either, because the company publishes no OpenAPI to derive one from. No `MCPServer`
+  pointer is emitted; this file records a measured absence.
+probes:
+- url: https://www.octagos.com/llms.txt
+  status: 200
+  finding: Real llms.txt served, but it describes marketing pages only — no MCP endpoint or tool list.
+- url: https://app.octagos.com/.well-known/oauth-protected-resource
+  status: 404
+  finding: No MCP OAuth protected-resource metadata.
+- url: https://registry.npmjs.org/-/v1/search?text=octagos
+  status: 200
+  finding: Zero packages, so no stdio MCP server is published.
