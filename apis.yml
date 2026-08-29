@@ -10,6 +10,17 @@ description: Octagos Health is a Houston, Texas based digital health company pro
   bi-directional EHR integration. Integration with Epic, Oracle Health, athenahealth, NextGen and MEDENT
   is delivered through HL7 v2 messaging, SMART on FHIR and FHIR APIs as an implementation service; Octagos
   publishes no public developer portal, API reference or machine-readable API contract of its own.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6724edce1aa90d0626ed13ed/67376967ef829ebd83e4250f_logomark.png
 url: https://raw.githubusercontent.com/api-evangelist/octagos-health/refs/heads/main/apis.yml
 x-type: company
