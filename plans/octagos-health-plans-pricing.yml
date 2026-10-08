@@ -87,3 +87,34 @@ billing_models:
   type: custom
   price: null
   description: Billing tailored to clinic workflow and patient volume.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: Pro
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
+  - name: Premium
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
+  - name: Flex
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
+  - name: Custom
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
