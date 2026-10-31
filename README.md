@@ -64,5 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Octagos Health is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/octagos-health_stock/
+Octagos Health is a Houston, Texas based digital health company providing an AI-assisted cardiac remote monitoring platform for cardiology practices, electrophysiology labs and health systems. Its Atlas AI engine triages implantable cardiac device transmissions to suppress non-actionable alerts, paired with IBHRE-certified human device-specialist review (the "Two-Brain Approach"). The platform is vendor-neutral across Medtronic, Boston Scientific, Abbott/St. Jude, Biotronik and ARCS devices, covers in-clinic interrogations, remote transmissions, loop recorders, CardioMEMS heart-failure hemodynamics and the S-Patch EXL ambulatory ECG patch, and adds patient engagement, billing/revenue analytics and bi-directional EHR integration. Integration with Epic, Oracle Health, athenahealth, NextGen and MEDENT is delivered through HL7 v2 messaging, SMART on FHIR and FHIR APIs as an implementation service; Octagos publishes no public developer portal, API reference or machine-readable API contract of its own.
+
+**Areas:** Company · Healthcare · Cardiology · Remote Patient Monitoring · Medical Devices · Artificial Intelligence · Health IT · Interoperability · FHIR · EHR Integration · Clinical Workflow
+
+## Octagos Health on APIs.io
+
+Everything profiled for Octagos Health is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/octagos-health/](https://apis.io/providers/octagos-health/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Octagos Health Authentication](https://apis.io/security/octagos-health/octagos-health-authentication/)
+- [Octagos Health Domain Security](https://apis.io/security/octagos-health/octagos-health-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Octagos Health Plans Pricing](https://apis.io/plans/octagos-health/octagos-health-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Octagos Health Rate Limits](https://apis.io/rate-limits/octagos-health/octagos-health-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.octagos.com/)
+- [Pricing](https://www.octagos.com/pricing)
+- [Support](https://www.octagos.com/company/contact)
+- [Blog](https://www.octagos.com/learning-center)
+- [Terms of service](https://www.octagos.com/terms)
+- [Privacy policy](https://www.octagos.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 27.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 77.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/octagos-health/](https://apis.io/providers/octagos-health/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Octagos Health: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/octagos-health/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
